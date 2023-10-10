@@ -1,0 +1,29 @@
+server:
+  port: 8100
+spring:
+  datasource:
+    # mysql
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://127.0.0.1:3308/test-mysql?useUnicode=true&characterEncoding=UTF-8&
+#    password: admin123
+
+    # sqlite
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:C:\Users\35003\workspace-my\sqlite-demo\src\main\resources\db2\test.db
+
+#    url: jdbc:sqlite::resource:db2/test.db
+#    auto-commit: false
+#    connection-timeout: 5000
+#    initial-size: 16
+#    max-active: 32
+#    maximum-pool-size: 32
+#    max-idle: 60000
+
+
+
+
+#控制台打印SQL语句
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
